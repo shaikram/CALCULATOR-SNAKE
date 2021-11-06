@@ -11,4 +11,14 @@ class snakeController extends Controller
     return view('snake');
 
   }
+  public function weather(){
+
+    return view('weather');
+
+  }
+  public function calculator(){
+
+    return view('calcu');
+
+  }
 }

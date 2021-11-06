@@ -14,6 +14,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+  $url = 'http://shaikram.epizy.com/?i=1';
+      return Redirect::to($url);
+    // return view('welcome');
 });
 Route::get('snake', 'App\Http\Controllers\snakeController@index');
+Route::get('weather', 'App\Http\Controllers\snakeController@weather');
+Route::get('calculator', 'App\Http\Controllers\snakeController@calculator');
